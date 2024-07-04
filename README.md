@@ -6,6 +6,6 @@ Elaboração do projeto como modelo de aprendizagem para a disciplina de Projeto
 
 Integrantes da equipe:
 Bernardo Bizol
-Eduardo Tonon
-Felipe Malicheski
-Juliana Ramalho
+<br>Eduardo Tonon
+<br>Felipe Malicheski
+<br>Juliana Ramalho
