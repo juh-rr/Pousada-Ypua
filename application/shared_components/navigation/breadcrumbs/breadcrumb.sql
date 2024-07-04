@@ -1,0 +1,63 @@
+prompt --application/shared_components/navigation/breadcrumbs/breadcrumb
+begin
+--   Manifest
+--     MENU: Breadcrumb
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.0'
+,p_default_workspace_id=>116909167559149384287
+,p_default_application_id=>204853
+,p_default_id_offset=>0
+,p_default_owner=>'WKSP_FELIPESWORKSPACE'
+);
+wwv_flow_imp_shared.create_menu(
+ p_id=>wwv_flow_imp.id(118068368095910197894)
+,p_name=>'Breadcrumb'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(3097088230503822991)
+,p_parent_id=>wwv_flow_imp.id(120806347418872026274)
+,p_short_name=>'Reserva'
+,p_link=>'f?p=&APP_ID.:5:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>5
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(118068368251686197894)
+,p_short_name=>'Home'
+,p_link=>'f?p=&APP_ID.:1:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>1
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(118069390258118199018)
+,p_short_name=>unistr('Administra\00E7\00E3o')
+,p_link=>'f?p=&APP_ID.:10000:&SESSION.::&DEBUG.:::'
+,p_page_id=>10000
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(119513484888572131044)
+,p_short_name=>unistr('Acomoda\00E7\00F5es')
+,p_link=>'f?p=&APP_ID.:8:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>8
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(120806347418872026274)
+,p_short_name=>'Reservas'
+,p_link=>'f?p=&APP_ID.:13:&SESSION.::&DEBUG.:::'
+,p_page_id=>13
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(120821528220006355407)
+,p_short_name=>unistr('H\00F3spedes')
+,p_link=>'f?p=&APP_ID.:16:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>16
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(120886699340626479830)
+,p_short_name=>'Calendario'
+,p_link=>'f?p=&APP_ID.:3:&SESSION.::&DEBUG.:::'
+,p_page_id=>3
+);
+wwv_flow_imp.component_end;
+end;
+/

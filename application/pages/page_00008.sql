@@ -1,0 +1,172 @@
+prompt --application/pages/page_00008
+begin
+--   Manifest
+--     PAGE: 00008
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.05.31'
+,p_release=>'24.1.0'
+,p_default_workspace_id=>116909167559149384287
+,p_default_application_id=>204853
+,p_default_id_offset=>0
+,p_default_owner=>'WKSP_FELIPESWORKSPACE'
+);
+wwv_flow_imp_page.create_page(
+ p_id=>8
+,p_name=>unistr('Acomoda\00E7\00F5es')
+,p_alias=>unistr('ACOMODA\00C7\00D5ES')
+,p_step_title=>unistr('Acomoda\00E7\00F5es')
+,p_autocomplete_on_off=>'OFF'
+,p_page_template_options=>'#DEFAULT#'
+,p_protection_level=>'C'
+,p_page_component_map=>'18'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(119513480303989131039)
+,p_plug_name=>unistr('Acomoda\00E7\00F5es')
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_imp.id(118068461656172197937)
+,p_plug_display_sequence=>10
+,p_query_type=>'TABLE'
+,p_query_table=>'ACOMODACAO'
+,p_include_rowid_column=>false
+,p_plug_source_type=>'NATIVE_IR'
+,p_prn_page_header=>unistr('Acomoda\00E7\00F5es')
+);
+wwv_flow_imp_page.create_worksheet(
+ p_id=>wwv_flow_imp.id(119513480441615131039)
+,p_name=>unistr('Acomoda\00E7\00F5es')
+,p_max_row_count_message=>unistr('A contagem m\00E1xima de linhas deste relat\00F3rio \00E9 #MAX_ROW_COUNT# linhas. Aplique um filtro para reduzir o n\00FAmero de registros em sua consulta.')
+,p_no_data_found_message=>unistr('Dados n\00E3o encontrados.')
+,p_pagination_type=>'ROWS_X_TO_Y'
+,p_pagination_display_pos=>'BOTTOM_RIGHT'
+,p_report_list_mode=>'TABS'
+,p_lazy_loading=>false
+,p_show_detail_link=>'C'
+,p_show_pivot=>'N'
+,p_show_notify=>'Y'
+,p_download_formats=>'CSV:HTML:XLSX:PDF'
+,p_enable_mail_download=>'Y'
+,p_detail_link=>'f?p=&APP_ID.:9:&APP_SESSION.::&DEBUG.:RP:P9_ID:\#ID#\'
+,p_detail_link_text=>'<span role="img" aria-label="Editar" class="fa fa-edit" title="Editar"></span>'
+,p_owner=>'FELIPEMALICHESKI@GMAIL.COM'
+,p_internal_uid=>119513480441615131039
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(120099368979484151103)
+,p_db_column_name=>'ID'
+,p_display_order=>10
+,p_is_primary_key=>'Y'
+,p_column_identifier=>'P'
+,p_column_label=>'Id'
+,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(119513481239123131042)
+,p_db_column_name=>'NOME'
+,p_display_order=>20
+,p_column_identifier=>'B'
+,p_column_label=>'Nome'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(119511036457581105108)
+,p_db_column_name=>'VALOR'
+,p_display_order=>30
+,p_column_identifier=>'K'
+,p_column_label=>'Valor'
+,p_column_type=>'NUMBER'
+,p_heading_alignment=>'LEFT'
+,p_format_mask=>'FML999G999G999G999G990D00'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(119513482015539131043)
+,p_db_column_name=>'CAMASOLTEIRO'
+,p_display_order=>40
+,p_column_identifier=>'D'
+,p_column_label=>'Camas Solteiro'
+,p_column_type=>'NUMBER'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(119513482427932131043)
+,p_db_column_name=>'CAMACASAL'
+,p_display_order=>50
+,p_column_identifier=>'E'
+,p_column_label=>'Camas Casal'
+,p_column_type=>'NUMBER'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(120099368815704151102)
+,p_db_column_name=>'STATUS'
+,p_display_order=>60
+,p_column_identifier=>'O'
+,p_column_label=>'Status'
+,p_column_type=>'STRING'
+,p_column_alignment=>'CENTER'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_rpt(
+ p_id=>wwv_flow_imp.id(119513089217519394341)
+,p_application_user=>'APXWS_DEFAULT'
+,p_report_seq=>10
+,p_report_alias=>'1195130893'
+,p_status=>'PUBLIC'
+,p_is_default=>'Y'
+,p_report_columns=>'NOME:CAMASOLTEIRO:CAMACASAL'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(119513484953861131044)
+,p_plug_name=>'Breadcrumb'
+,p_region_template_options=>'#DEFAULT#:t-BreadcrumbRegion--useBreadcrumbTitle'
+,p_component_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_imp.id(118068483976743197947)
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'REGION_POSITION_01'
+,p_menu_id=>wwv_flow_imp.id(118068368095910197894)
+,p_plug_source_type=>'NATIVE_BREADCRUMB'
+,p_menu_template_id=>wwv_flow_imp.id(118069146334082197977)
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(119513483392748131043)
+,p_button_sequence=>10
+,p_button_plug_id=>wwv_flow_imp.id(119513480303989131039)
+,p_button_name=>'CREATE'
+,p_button_action=>'REDIRECT_PAGE'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_imp.id(118069144784508197976)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Criar'
+,p_button_position=>'RIGHT_OF_IR_SEARCH_BAR'
+,p_button_redirect_url=>'f?p=&APP_ID.:9:&APP_SESSION.::&DEBUG.:9::'
+);
+wwv_flow_imp_page.create_page_da_event(
+ p_id=>wwv_flow_imp.id(119513483646481131044)
+,p_name=>unistr('Editar Relat\00F3rio - Caixa de Di\00E1logo Fechada')
+,p_event_sequence=>10
+,p_triggering_element_type=>'REGION'
+,p_triggering_region_id=>wwv_flow_imp.id(119513480303989131039)
+,p_bind_type=>'bind'
+,p_execution_type=>'IMMEDIATE'
+,p_bind_event_type=>'apexafterclosedialog'
+);
+wwv_flow_imp_page.create_page_da_action(
+ p_id=>wwv_flow_imp.id(119513484191085131044)
+,p_event_id=>wwv_flow_imp.id(119513483646481131044)
+,p_event_result=>'TRUE'
+,p_action_sequence=>10
+,p_execute_on_page_init=>'N'
+,p_action=>'NATIVE_REFRESH'
+,p_affected_elements_type=>'REGION'
+,p_affected_region_id=>wwv_flow_imp.id(119513480303989131039)
+);
+wwv_flow_imp.component_end;
+end;
+/
