@@ -5,7 +5,5 @@ Construção de uma aplicação de hospedagem para a Pousada Ypuã, utilizando O
 Elaboração do projeto como modelo de aprendizagem para a disciplina de Projeto Aplicado, do curso de Análise e Desenvolvimento de Sistemas pela Faculdade SENAI Florianópolis.
 
 Integrantes da equipe:
-<br>Bernardo Bizol
-<br>Eduardo Tonon
 <br>Felipe Malicheski
 <br>Juliana Ramalho
